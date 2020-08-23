@@ -17,6 +17,8 @@ This is source code from training PHP MVC (Model View Controller) at youtube cha
 | PHP | JS | HTML | CSS |
 
 ### Software
-| Code Editor | [Visual Studio Code](https://code.visualstudio.com/) |
-| Web Browser | [Google Chrome](https://www.google.com/chrome/) |
-| Web Server | [XAMPP](https://www.apachefriends.org/) |
+[Visual Studio Code](https://code.visualstudio.com/) |
+
+[Google Chrome](https://www.google.com/chrome/) |
+
+[XAMPP](https://www.apachefriends.org/) |
