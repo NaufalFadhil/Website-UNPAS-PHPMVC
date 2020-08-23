@@ -1,18 +1,24 @@
 <?php
+// CLASS MODEL MAHASISWA
+////////////////////////
 
-// MEMBUAT KELAS 
+// MEMBUAT CLASS
 class Mahasiswa_model
 {
+    // BUAT PROPERTY
     private $table = 'mahasiswa', $db;
 
+    // BUAT OBJEK CONSTRUCTOR
     public function __construct()
     {
+        // BUAT OBJEK INSTANSIASI DARI DB   
         $this->db = new Database;
     }
 
     // BUAT METHOD 
     public function getAllMahasiswa()
     {
+        // PANGGIL DB, PANGGIL QUERY
         $this->db->query('SELECT * FROM ' . $this->table);
         return $this->db->resultSet();
     }

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <!-- UNTUK HEADER BIAR GA NULIS TIAP FILE -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="<?= BASEURL; ?>">PHP MVC</a>
