@@ -1,6 +1,7 @@
 <?php
-// FILE DATABASE
-////////////////
+// FILE DATABASE // CORE
+// MENGATUR KONEKSI DATABASE
+/////////////////////////
 
 // MEMBUAT CLASS DATABASE 
 class Database

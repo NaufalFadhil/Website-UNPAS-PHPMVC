@@ -7,7 +7,7 @@
 class About extends Controller
 {
     // METHOD INDEX
-    public function index($nama = "Nata", $pekerjaan = "Mahasiswa", $umur = 19)
+    public function index($nama = "Naufal Fadhil", $pekerjaan = "Mahasiswa", $umur = 19)
     {
         // ASSIGN PROP
         $data["nama"] = $nama;

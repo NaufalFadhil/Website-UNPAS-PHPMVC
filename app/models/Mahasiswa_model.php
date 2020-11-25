@@ -1,5 +1,6 @@
 <?php
 // CLASS MODEL MAHASISWA
+// MENGATUR CRUD DATABASE
 ////////////////////////
 
 // MEMBUAT CLASS
@@ -15,7 +16,7 @@ class Mahasiswa_model
         $this->db = new Database;
     }
 
-    // BUAT METHOD 
+    // METHOD MENGAMBIL SEMUA DATA MAHASISWA 
     public function getAllMahasiswa()
     {
         // PANGGIL DB, PANGGIL QUERY
@@ -23,7 +24,7 @@ class Mahasiswa_model
         return $this->db->resultSet();
     }
 
-
+    // METHOD MENGAMBIL SEMUA DATA MAHASISWA 
     public function getMahasiswaById($id)
     {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id=:id');
@@ -31,6 +32,7 @@ class Mahasiswa_model
         return $this->db->single();
     }
 
+    // METHOD MENAMBAH DATA MAHASISWA
     public function tambahDataMahasiswa($data)
     {
         $query = "INSERT INTO mahasiswa
@@ -48,6 +50,7 @@ class Mahasiswa_model
         return $this->db->rowCount();
     }
 
+    // METHOD MENGHPUS DATA MAHASISWA
     public function hapusDataMahasiswa($id)
     {
         $query = "DELETE FROM mahasiswa WHERE id = :id";
@@ -59,6 +62,7 @@ class Mahasiswa_model
         return $this->db->rowCount();
     }
 
+    // METHOD MENGUBAH DATA MAHASISWA
     public function ubahDataMahasiswa($data)
     {
         $query = "UPDATE mahasiswa SET 
@@ -80,11 +84,15 @@ class Mahasiswa_model
         return $this->db->rowCount();
     }
 
+    // METHOD MENCARI DATA MAHASISWA
     public function cariDataMahasiswa()
     {
+        // AMBIL KEYWORD
         $keyword = $_POST['keyword'];
+        // AMBIL DATABASE BERDASARKAN SEPERTI KEYWORD
         $query = "SELECT * FROM mahasiswa WHERE nama LIKE :keyword";
         $this->db->query($query);
+        // MENENTUKAN PARAMETER
         $this->db->bind('keyword', "%$keyword%");
         return $this->db->resultSet();
     }

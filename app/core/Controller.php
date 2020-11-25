@@ -1,6 +1,7 @@
 <?php
 // ICORE CONTROLLER
-///////////////////
+// MENGKONTROL ARAH TUJUAN WEB
+//////////////////////////////
 
 // BUAT CLASS
 class Controller

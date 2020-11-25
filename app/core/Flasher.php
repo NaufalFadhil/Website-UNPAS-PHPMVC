@@ -1,6 +1,7 @@
 <?php
-// INI CLASS FLASHER - CORE
-///////////////////////////
+// INI CLASS FLASHER // CORE
+// MENGATUR TAMPILAN SEKILAS
+////////////////////////////
 
 // BUAT CLASS
 class Flasher

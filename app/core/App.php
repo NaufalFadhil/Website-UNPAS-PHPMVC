@@ -1,5 +1,6 @@
 <?php
 // CORE APP
+// MEGATUR SEMUA SETTINGAN DI WEB
 ///////////
 
 // MEMBUAT CLASS APP
